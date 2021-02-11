@@ -1,0 +1,370 @@
+<nav id="navbar">
+  <header>Software Development Documentation</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li>
+      <a class="nav-link" href="#What_you_should_already_know"
+        >What you should already know</a
+      >
+    </li>
+    <li>
+      <a class="nav-link" href="#Agile_and_waterfall_approaches">Agile and waterfall approaches</a>
+    </li>
+    <li><a class="nav-link" href="#Types_of_documentation">Types of documentation</a></li>
+    <li><a class="nav-link" href="#Product:_System_documentation">Product: System documentation</a></li>
+    <li>
+      <a class="nav-link" href="#Here_are_the_main_recommendations_points_to_include_in_your_product_requirement_document:">Here are the main recommendations points to include in your product requirement document:</a>
+    </li>
+    <li><a class="nav-link" href="#Make_all_this_information_more_comprehensive_by_using_the_following_practices:">Make all this information more comprehensive by using the following practices:</a></li>
+    <li><a class="nav-link" href="#User_Experience_Design_documentation">User Experience Design documentation</a></li>
+    <li><a class="nav-link" href="#Source_code_document">Source code document</a></li>
+    <li><a class="nav-link" href="#Quality_assurance_documentation">Quality assurance documentation</a></li>
+    <li>
+      <a class="nav-link" href="#Product:_User_documentation">Product: User documentation</a>
+    </li>
+    <li><a class="nav-link" href="#Process_Documentation">Process Documentation</a></li>
+    <li>
+      <a class="nav-link" href="#Agile_product_roadmaps"
+        >Agile product roadmaps</a
+      >
+    </li>
+    <li><a class="nav-link" href="#Reference">Reference</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+      <p>
+        Technical documentation in software engineering is the umbrella term that encompasses all written documents and materials dealing with software product development. All software development products, whether created by a small team or a large corporation, require some related documentation. And different types of documents are created through the whole software development lifecycle (SDLC). Documentation exists to explain product functionality, unify project-related information, and allow for discussing all significant questions arising between stakeholders and developers.
+
+      <p>
+        On top of that, documentation errors can set gaps between the visions of stakeholders and engineers and, as a result, a proposed solution won’t meet stakeholders expectations. Consequently, managers should pay a lot of attention to documentation quality.
+      </p>
+      
+    </article>
+  </section>
+  <section class="main-section" id="What_you_should_already_know">
+    <header>What you should already know</header>
+    <article>
+      <p>This guide assumes you have the following basic background:</p>
+
+      <ul>
+        <li>
+          A general understanding of the Internet and the World Wide Web (WWW).
+        </li>
+        <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+        <li>
+          Basic Knowledge about web developing or software development.
+        </li>
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="Agile_and_waterfall_approaches">
+    <header>Agile and waterfall approaches</header>
+    <article>
+      <p>
+        The documentation types that the team produces and its scope depending on the software development approach that was chosen. There are two main ones: agile and waterfall. Each is unique in terms of accompanying documentation.
+      </p>
+
+      <p>
+        The Waterfall approach is a linear method with distinct goals for each development phase. Teams that use waterfall spend a reasonable amount of time on product planning in the early stages of the project. They create an extensive overview of the main goals and objectives and plan what the working process will look like. Waterfall teams strive to create detailed documentation before any of the engineering stages begin. Careful planning works well for projects with little to no changes in progress as it allows for precise budgeting and time estimates. However, waterfall planning has proven to be ineffective for long-term development as it doesn’t account for possible changes and contingencies on the go. According to KPMG Global Agile Survey, 81% of companies initiated their Agile transformation in the last three years.
+      </p>
+      <p>
+        The agile approach is based on teamwork, close collaboration with customers and stakeholders, flexibility, and ability to quickly respond to changes. The basic building blocks of agile development are iterations; each one of them includes planning, analysis, design, development, and testing. The agile method doesn’t require comprehensive documentation at the beginning. Managers don’t need to plan much in advance because things can change as the project evolves. This allows for just-in-time planning. As one of the Agile Manifesto values suggests, putting – “working software over comprehensive documentation -“, the idea is to produce documentation with information that is essential to move forward, when it makes the most sense.
+      </p>
+      <p>Today, agile is the most common practice in software development, so we’ll focus on documentation practices related to this method.</p>
+    </article>
+  </section>
+  <section class="main-section" id="Types_of_documentation">
+    <header>Types of documentation</header>
+    <article>
+      The main goal of effective documentation is to ensure that developers and stakeholders are headed in the same direction to accomplish the objectives of the project. To achieve them, plenty of documentation types exist.
+      <code>
+        All software documentation can be divided into two main categories:
+
+Product documentation
+Process documentation
+Product documentation describes the product that is being developed and provides instructions on how to perform various tasks with it. In general, product documentation includes requirements, tech specifications, business logic, and manuals. There are two main types of product documentation:
+
+System documentation represents documents that describe the system itself and its parts. It includes requirements documents, design decisions, architecture descriptions, program source code, and FAQs.
+User documentation covers manuals that are mainly prepared for end-users of the product and system administrators. User documentation includes tutorials, user guides, troubleshooting manuals, installation, and reference manuals.
+Process documentation represents all documents produced during development and maintenance that describe… well, the process. The common examples of process-related documents are standards, project documentation, such as project plans, test schedules, reports, meeting notes, or even business correspondence.
+
+The main difference between process and product documentation is that the first one records the process of development and the second one describes the product that is being developed.
+      </code>
+    </article>
+  </section>
+  <section class="main-section" id="Product:_System_documentation">
+    <header>Product: System documentation</header>
+    <p>
+      System documentation provides an overview of the system and helps engineers and stakeholders understand the underlying technology. It usually consists of the requirements document, architecture design, source code, validation docs, verification and testing info, and a maintenance or help guide. It’s worth emphasizing that this list isn’t exhaustive. So, let’s have a look at the details of the main types.
+    </p>
+    <article>Product requirement document</article>
+    <p>
+      A product requirement document or PRD provides information about system functionality. Generally, requirements are the statements of what a system should do. It contains business rules, user stories, use cases, etc. This document should be clear and shouldn’t be an extensive and solid wall of text. It should contain enough to outline the product’s purpose, its features, functionalities, maintenance, and behavior.
+    </p>
+    <p>
+      The best practice is to write a requirement document using a single, consistent template that all team members adhere to. The one web-page form will help you keep the document concise and save the time spent on accessing the information. Here’s a look at an example of a one-web-page product-requirements document to understand various elements that should be included in your PRD. Nevertheless, you should remember that this isn’t the one and only way to compile this document.
+    </p>
+  </section>
+  <section class="main-section" id="#Here_are_the_main_recommendations_points_to_include_in_your_product_requirement_document:">
+    <header>Here are the main recommendations points to include in your product requirement document:</header>
+    <article>
+      You can declare a variable in three ways:
+      <code>Roles and responsibilities. Start your document with the information about project participants including a product owner, team members, and stakeholders. These details will clarify responsibilities and communicate the target release goals for each of the team members.
+Team goals and business objective. Define the most important goals in a short point form.
+Background and strategic fit. Provide a brief explanation of the strategic aim of your actions. Why are you building the product? How do your actions affect product development and align with the company’s goals?
+Assumptions. Create a list of technical or business assumptions that the team might have.
+User Stories. List or link user stories that are required for the project. A user story is a document written from the point of view of a person using your software product. The user story is a short description of customer actions and results they want to achieve.
+Acceptance criteria. Those are the conditions that indicate a user story is completed. The main purpose of acceptance criteria is to define a satisfactory result for a usage scenario from the end-user perspective. Check our dedicated article on acceptance criteria to learn more.
+User interaction and design. Link the design explorations and wireframes to the page.
+Questions. As the team solves the problems along the project progression, they inevitably have many questions arising. A good practice is to record all these questions and track them.
+Not doing. List the things which you aren’t doing now but plan on doing soon. Such a list will help you organize your teamwork and prioritize features.
+Make all this information more comprehensive by using the following practices:
+
+Use links and anchors. They will help you make the document easier to read and search as readers will be able to comprehend the information gradually. For instance, you can provide links to customer interviews and anchors to previous discussions or other external information related to the project.
+Use graphics and diagramming tools to better communicate the problems to your team. People are more likely to perceive information by looking at the images than reading an extensive document. Different visual models will help you to perform this task and outline requirements more effectively. You can incorporate diagrams into your requirements process using the following software diagramming tools: Visio, Gliffy, Balsamiq, Axure or SmartArt in Microsoft Office.</code>
+    </article>
+  </section>
+  <section class="main-section" id="Make_all_this_information_more_comprehensive_by_using_the_following_practices:">
+    <header>Make all this information more comprehensive by using the following practices:</header>
+    <article>
+      <p>
+        Use links and anchors. They will help you make the document easier to read and search as readers will be able to comprehend the information gradually. For instance, you can provide links to customer interviews and anchors to previous discussions or other external information related to the project.
+      </p>
+
+      <p>
+        Use graphics and diagramming tools to better communicate the problems to your team. People are more likely to perceive information by looking at the images than reading an extensive document. Different visual models will help you to perform this task and outline requirements more effectively. You can incorporate diagrams into your requirements process using the following software diagramming tools: Visio, Gliffy, Balsamiq, Axure or SmartArt in Microsoft Office.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="User_Experience_Design_documentation">
+    <header>User Experience Design documentation</header>
+    <article>
+      <p>
+        User experience design begins at the requirements stage and proceeds through all the stages of development, including the testing and post-release stages. The process of UX design includes research, prototyping, usability testing, and the actual designing part, during which lots of documentation and deliverables are produced.
+      </p>
+      <article>The UX documentation can be divided into stages. The research stage includes:</article>
+      <code>User personas
+        User scenario
+        Scenario map
+        User story map
+        UX style guide</code>
+      <p>
+        User Personas are created and documented during the research stage. The information gathered during user interviews and surveys is compiled into functional user persona documents. User personas represent the key characteristics of real users, focusing on behavior, thought patterns, and motivation.
+      </p>
+      <p>A user scenario is a document that describes the steps a user persona will take to accomplish a specific task. User scenarios focus on what a user will do, rather than outlining the thought process. The set of scenarios can be either visual or narrative, and describe the existing scenarios or future functionality.</p>
+      <p>Scenario maps are used to compile the existing user scenarios into a single document. Scenario maps show all possible scenarios available at a given moment. The main purpose of a scenario map is to depict all the possible scenarios for every single function, as well as intersecting scenario steps.</p>
+      <p>A user story map is formed from the backlog of the product. This type of document helps to arrange the user stories into future functions or parts of the application. A user story map can be a scheme, or a table of user stories grouped in a particular order to denote the required functions for a certain sprint.</p>
+      <p>The UX style guide is a document that includes the design patterns for the future product. It also describes all possible UI elements and content types used, defining the rules of how they should be arranged and work with each other. But, unlike a UI style guide, UX designers don’t describe the actual look of the interface.</p>
+      <p>On the stage of prototyping and designing, a UX designer often works with the deliverables and updates documentation on par with other team members, including product owner, UI designers, and development team. The most common documents produced at these stages are:</p>
+      <code>Site maps
+            Wireframes
+            Mock-ups
+            Prototypes
+            User flow schemes or user journey
+            Usability testing reports</code>
+            <p>A site/product map is a visual scheme that represents the connection between all pages of a product. The map helps the whole team visualize the structure of a website or app and the connections between the pages/functions. Creating a site map is a part of arranging the information architecture.</p>
+            <p>User flow or user journey schemes help the team to map the steps a user should take through the whole product. The main task of a user flow scheme is to depict the possible steps a user may take, going from page to page. Usually, the scheme includes all the pages, sections, buttons, and functions they provide to show the logic of user movement.</p>
+            <p>Wireframes are the blueprints for future UI. Basically, wireframes are the schemes that show how to arrange the elements on the page and how they should behave. But, wireframes don’t depict what those elements should look like.</p>
+            <p>A mock-up is the next product design stage, showing the actual look and feel of a product. Basically, mock-ups are static images representing the final product design.</p>
+            <p>A prototype is a mock-up that you can interact with: click some buttons, navigate between different pages, and so on. A prototype can be created in a prototyping tool like Sketch or MockFlow. Using templates, UX designers can create interactive mock-ups on the early stages of development to be employed for usability testing.</p>
+            <p>A usability testing report is a short-form feedback document created to communicate the results of usability testing. The report should be as short as possible, with visual examples prevailing over text.</p>
+            <p>Software architecture design document
+            Software architecture design documents, sometimes also called technical specifications, include the main architectural decisions made by the solution architect. Unlike the product requirement document mentioned above that describes what needs to be built, the architecture design documentation is about how to build it. It has to describe in what way each product component will contribute to and meet the requirements, including solutions, strategies, and methods to achieve that. So, the software design document gives an overview of the product architecture, determines the full scope of work, and sets the milestones, thus, looping in all the team members involved and providing the overall guidance.</p>
+            <p>Overview and background. Briefly describe the main goals of the project, what problems you are trying to solve, and the results you want to achieve.</p>
+            <p>Architecture & Design Principles. Underline the guiding architecture and design principles with which you will engineer the product. For instance, if you plan to structure your solution using microservices architecture, don’t forget to specifically mention this.</p>
+            <p>User Story description. Connect user stories with associated business processes and related scenarios. You should try to avoid technical details in this section.</p>
+            <p>Solution details. Describe the contemplated solution by listing planned services, modules, components, and their importance.</p>
+            <p>Diagrammatic representation of the solution. Provide the diagrams and/or other graphic materials to help understand and communicate the structure and design principles.</p>
+            <p>Milestones. Include the overall timeline, deadlines for completion, and/or functional milestones, i.e., independent modules of the application developed. That will help organize the work process and provide a clear metric to monitor progress. This section can be very brief as it’s closely related to the process documentation described below.</p>
+    </article>
+  </section>
+  <section class="main-section" id="Source_code_document">
+    <header>Source code document</header>
+    <article>
+      <p>
+        A source code document is a technical section that explains how the code works. While it’s not necessary, the aspects that have the greatest potential to confuse should be covered. The main users of the source code documents are software engineers.
+      </p>
+
+
+      <article>Source code documents may include but are not limited to the following details:</article>
+
+      <code>HTML generation framework and other frameworks applied
+            Type of data binding
+            Design pattern with examples (e.g. model-view-controller)
+            Security measures
+            Other patterns and principles</code>
+      <p>
+        Try to keep the document simple by making short sections for each element and supporting them with brief descriptions.
+      </p>
+
+      
+    </article>
+  </section>
+  <section class="main-section" id="Quality_assurance_documentation">
+    <header>Quality assurance documentation</header>
+    <article>
+      <p>There are different types of testing documents in agile. We have outlined the most common:</p>
+      <ul>
+        <li>
+          <p>Five data types that are primitives:</p>
+          <ul>
+            <li>Quality management plan</li>
+            <li>
+              Test strategy
+            </li>
+            <li>Test plan</li>
+            <li>Test case specifications</li>
+            <p>A quality management plan is an analog of a requirement document dedicated to testing. This document sets the required standard for product quality and describes the methods to achieve this level. The plan helps to schedule QA tasks and manage testing activity for product managers, but, it is mainly used for large-scale projects.</p>
+            <p>A test strategy is a document that describes the software testing approach to achieve testing objectives. This document includes information about team structure and resource needs along with what should be prioritized during testing. A test strategy is usually static as the strategy is defined for the entire development scope.</p>    
+            <p>A test plan usually consists of one or two pages and describes what should be tested at a given moment. This document should contain:</p>
+
+            <code>The list of features to be tested
+                    Testing methods
+                    Timeframes
+                    Roles and responsibilities (e.g. unit tests may be performed either by the QA team or by engineers)</code>
+            <p>A test case specifications document is a set of detailed actions to verify each feature or functionality of a product. Usually, a QA team writes a separate specifications document for each product unit. Test case specifications are based on the approach outlined in the test plan. A good practice is to simplify specifications description and avoid test case repetitions.</p>
+            <p>Test checklist is a list of tests that should be run at a particular time. It represents what tests are completed and how many have failed. All points in the test checklists should be defined correctly. Try to group test points in the checklists. This approach will help you keep track of them during your work and not lose any. If it helps testers to check the app correctly, you can add comments to your points on the list.</p>
+            <p>Maintenance and help guide
+            This document should describe known problems with the system and their solutions. It also should represent the dependencies between different parts of the system.</p>
+            <p>API documentation
+            Nearly any product has its APIs or Application Programming Interfaces. Their documentation informs developers how to effectively use and connect to the required APIs.</p>
+            <p>API documentation is a deliverable produced by technical writers as tutorials and guides. This type of documentation should also contain the list of all available APIs with specs for each one.</p>
+    </article>
+  </section>
+  <section class="main-section" id="Product:_User_documentation">
+    <header>Product: User documentation</header>
+    <article>
+      As the name suggests, user documentation is created for product users. However, their categories may also differ. So, you should structure user documentation according to the different user tasks and different levels of their experience. Generally, user documentation is aimed at two large categories:
+
+      <code>end-users
+            system administrators
+      <p>
+        End-user documentation
+      </p>
+     <p>The documentation created for end-users should explain in the simplest way possible how the software can help solve their problems. Such user instructions can be provided in the printed form, online, or offline on a device. Here are the main types of the user documents:</p>
+     <p>qThe quick start guide provides an overview of the product’s functionality and gives basic guidelines on how to use it.</p>
+     <p>The complete manual includes exhaustive information and instructions on how to install and operate the product. It lists the hardware and software requirements, detailed description of the features and full guidelines on how to get the most out of them, example inputs and outputs, possible tips and tricks, etc.;</p>
+     <p>The troubleshooting guide gives end-users information on how to find and resolve possible issues that might arise when using the product.</p>
+     <p>Some parts of user documentation, such as tutorials and onboarding, in many large customer-based products are replaced with onboarding training. Nevertheless, there are still complex systems remaining that require documented user guides.</p>
+     <p>User documentation requires technical writers to be more imaginative. Online end-user documentation may include the following sections:</p>
+    <code>FAQs
+        Video tutorials
+        Embedded assistance
+        Support Portals</code>
+        <p>Since user documentation is a part of customer experience, it’s important to make it easy to understand and logically structured. Written in plain language with visual materials and step-by-step instructions included, user guides can become a powerful marketing tool and increase customer satisfaction and loyalty.</p>
+        <p>Besides, to provide the best service for end-users, you should collect your customer feedback continuously. The wiki system is one of the more useful practices. It helps to maintain the existing documentation. If you use the wiki system you won’t need to export documents to presentable formats and upload them to the servers. You can create your wiki pages using a wiki markup language and HTML code.</p>
+        <p>System administrators’ documentation</p>
+        <p>System administrators’ documents don’t need to provide information about how to operate the software. Usually, administration docs cover installation and updates that help a system administrator with product maintenance. Here are standard system administrators documents:</p>
+        <code>Functional description – describes the functionalities of the product. Most parts of this document are produced after consultating a user or an owner.
+System admin guide – explains different types of behaviors of the system in different environments and with other systems. It also should provide instructions on how to deal with malfunction situations.</code>
+    </article>
+  </section>
+  <section class="main-section" id="Process_Documentation">
+    <header>Process Documentation</header>
+    <article>
+      Process documentation covers all activities surrounding product development. The value of keeping process documentation is to make development more organized and well-planned. This branch of documentation requires some planning and paperwork both before the project starts and during the development. Here are common types of process documentation:
+
+      <p>Plans, estimates, and schedules. These documents are usually created before the project starts and can be altered as the product evolves.</p>
+
+      <p>
+        Reports and metrics. Reports reflect how time and human resources were used during development. They can be generated on a daily, weekly, or monthly basis. Consult our article on agile delivery metrics to learn more about process documents such as velocity chats, sprint burndown charts, and release burndown charts.
+      </p>
+
+      <p>
+        Working papers. These documents exist to record engineers’ ideas and thoughts during project implementation. Working papers usually contain some information about an engineer’s code, sketches, and ideas on how to solve technical issues. While they shouldn’t be the major source of information, keeping track of them allows for retrieving highly specific project details if needed.
+      </p>
+
+      <p>Standards. The section on standards should include all coding and UX standards that the team adheres to along the project’s progression.</p>
+      The majority of process documents are specific to the particular moment or phase of the process. As a result, these documents quickly become outdated and obsolete. But they still should be kept as part of development because they may become useful in implementing similar tasks or maintenance in the future. Also, process documentation helps to make the whole development more transparent and easier to manage.
+      <p>The main goal of process documentation is to reduce the amount of system documentation. In order to achieve this, write the minimal documentation plan. List the key contacts, release dates, and your expectations with assumptions.</p>
+    </article>
+  </section>
+  <section class="main-section" id="Agile_product_roadmaps">
+    <header>Agile product roadmaps</header>
+    <article>
+      Product roadmaps are used in Agile software development to document vision, strategy, and overall goals of the project. Roadmaps are used as process documents to keep the course of development in sync with initial goals. Depending on the type of product roadmap, it can express high-level objectives, prioritization of tasks, the sprint timeline, or low-level details.
+
+      <ul>
+        <li>Strategic roadmap</li>
+        <li>
+          Technology or IT roadmap
+        </li>
+        <li>
+          Release plan
+        </li>
+      </ul>
+      <p>
+        A strategic roadmap is a high-level strategic document, that contains overall information on the project. Strategic roadmaps usually state a vision and long-term goals. In the case of agile product development, a roadmap can be arranged in themes. Themes are multiple tasks that a team must complete and are somehow connected. For instance, a theme may sound like “enhance page-loading speed,” which entails a handful of actions.
+      </p>
+
+     <p>Grouping the information around the themes makes a roadmap highly flexible and updatable, which is a great fit for sprint-based development. The best advice concerning strategic roadmapping is to include only important information. Otherwise, you risk turning your roadmap into a clumsy scheme, difficult to both understand and maintain.</p>
+     <p>A technology roadmap or IT roadmap is a low-level document that describes technical requirements and the means of technology implementation. IT roadmaps are quite detailed. They contain the information on each deliverable, explaining the reason for such a decision.</p>
+
+     <p>A release plan is used to set strict time limits for releases. A release plan should focus on the actual deadlines without specifying release details.</p>
+
+     <p>Tools for software documentation</p>
+     <code>General purpose tools
+There are countless collaborative tools for software development teams. Those can help to state requirements, share information, and document features and processes:
+
+        Atlassian Confluence is the most popular collaborative project tool that has the whole ecosystem for managing product requirements and writing documentation. Confluence is known for a stable wiki system and an efficient user story management interface.
+        Document 360 is a self-service knowledge base/software documentation platform designed for Software-as-a-Service products.
+        bit.ai is a tool for collaborative documentation creation, storing, data sharing, and using a wiki system. The documentation is interactive, meaning that developers can embed blocks or snippets of code right into the document and share it in one click. Once you finish editing your documentation, you can save it in PDF or markdown format, and post on any other platform.
+        Github needs no introduction, except for those who want to use it for software documentation. It provides you with its own wiki system and allows for converting your documentation into compelling website showcases.
+        Markdown editors
+        As software documentation is easier to be used on the web, it has to be created in a proper format. That’s why text-based markup languages are used. The most popular one is Markup, which can be easily converted into HTML, doesn’t require any special knowledge to use it. Markup is used on GitHub and Reddit, and basically everywhere for web-based documentation. So, here are some Markdown editors that can be useful for creating documents for your project:
+
+        Visual Studio Code
+        Typora
+        iA writer
+        Quiver
+        Roadmap specific tools
+        It’s a good practice to use roadmap specific tools, as they allow you to share the information quickly, update timelines or themes, add new points, and edit the whole structure. Most roadmapping tools provide templates for different roadmaps to let you start working with this document right away.
+
+        ProductPlan
+        Aha!
+        Roadmunk
+        Roadmap Planner
+        Basically, all the tools offer free trials and paid plans with differences in templates, number of roadmaps, and people you can share them with.
+
+        Tools for UX documentation
+        The most popular tools for user experience design are prototyping tools that help create sketches, mock-ups, wireframes, and interactive prototypes:
+
+        Sketch is a simple but powerful vector-based design tool that has a web-application and a Mac desktop client. Sketch is well-known and quite simple, offering enough capabilities for designing interfaces.
+        InVision is one of the most popular tools for prototyping. InVision is famous for its collaborative features and cross-platform capabilities, making it a great tool for designing future interfaces.
+        UXPin is a Mac and Windows design tools that allows you to build any type of blueprint. You can also upload your sketches or wireframes from other products and make an interactive prototype of it.
+        Adobe XD – where XD stands for experience design. The product is aimed at UX specialists. It allows designers to create high-fidelity prototypes and share them via the app.
+        Tools for API documentation
+        The process of creating API documentation is most often automated. Programmers or tech writers may write the documentation manually or use API documentation generators:
+
+        Swagger is a free self-documenting software service designed to create and update RESTful web services and APIs.
+        RAML 2 HTML is a simple documentation generator that uses RAML specifications.
+        Tools for technical writers
+        Professional tech writers often use specialized software for creating high-quality tech documentation. Such tools are called content management systems, or CMSs, and allow for easier building, organizing, and managing various documentation. A CMS can operate different file formats, import and store content, and let multiple users contribute to content development. Some popular CMSs include:
+
+        MadCapFlare — a powerful cloud-based software with a multi-channel publishing feature, multilingual support, extensive learning resources, and more.
+        Adobe RoboHelp — a full-featured CMS that allows for creating media-rich content, convenient managing of microcontent, collaborating for version control, etc.
+        ClickHelp — an award-winning platform offering easy migration from other programs, flexible permission options, and a number of reporting capabilities.
+</code>
+    </article>
+  </section>
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <ul>
+        <li>
+          All the documentation in this page is taken from
+          <a
+            href="https://www.altexsoft.com/blog/business/technical-documentation-in-software-development-types-best-practices-and-tools/"
+            >altexsoft</a
+          >
+        </li>
+      </ul>
+    </article>
+  </section>
+</main>
+
+<link rel="stylesheet" href="styles.css">
+
